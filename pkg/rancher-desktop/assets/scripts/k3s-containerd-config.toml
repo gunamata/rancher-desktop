@@ -23,3 +23,18 @@ state = "/run/k3s/containerd"
 
 [plugins.cri.containerd.runtimes.runc]
   runtime_type = "io.containerd.runc.v2"
+
+[plugins.cri.containerd.runtimes.wasmtime]
+  runtime_type = "io.containerd.wasmtime.v1"
+  
+[plugins.cri.containerd.runtimes.wasmedge]
+  runtime_type = "io.containerd.wasmedge.v1"
+  
+[plugins.cri.containerd.runtimes.wasmer]
+  runtime_type = "io.containerd.wasmer.v1"
+
+[plugins.cri.containerd.runtimes.slight]
+  runtime_type = "io.containerd.slight.v1"
+
+[plugins.cri.containerd.runtimes.spin]
+  runtime_type = "io.containerd.spin.v2"
